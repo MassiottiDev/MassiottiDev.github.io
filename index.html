@@ -3,6 +3,7 @@
     <head>
         <title>MassiottiDev</title>
         <link href="./resources/styles.css" rel="stylesheet">
+        <link href="./resources/RWD.css" rel="stylesheet">
         <link rel="icon" href="./resources/img/Icon32x32.png" >
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
@@ -10,28 +11,41 @@
 
         <!--Navbar-->
         <header class="row">
-            <nav class="nav">
+            <nav class="nav col-12">
                 <ul class="nav-list">  
                     <img src="./resources/img/Logo512x512.png"/>  
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Work</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#work">Work</a></li>
+                    <li><a href="#contact">Contact</a></li>
                 </ul>
             </nav>
         </header>
         <!--End of Navbar-->
         <!--Welcome Section-->
-        <section class="welcome-section">
-            <h1>MassiottiDev.</h1>
-            <p>Junior Programmer</p>
+        <section class="welcome-section row">
+            <h1 class="col-12">MassiottiDev.</h1>
+            <p class="col-12">Junior Programmer</p>
         </section>
         <!--End of Welcome Section-->
         <!--Start of Portfolio Section-->
-        <section class="portfolio-section">
+        <section id="work" class="portfolio-section row">
             <article class="col-4"> 1</article>
             <article class="col-4"> 2</article>
             <article class="col-4"> 3</article>
         </section>
         <!--End of Portfolio Section-->
+        <!--Start of CV Section-->
+        <section id="about" class="cv-section row">
+            <article class="col-6">1</article>
+            <article class="col-6">2</article>
+        </section>
+        <!--End of CV Section-->
+        <!--Start of Contact Section-->
+        <footer id="contact" class="contact-section row">
+            <p class="col-4">GitHub</p>
+            <p class="col-4">Email</p>
+            <p class="col-4">Phone</p>
+        </footer>
+        <!--End of Contact Section-->
     </body>
 </html>
