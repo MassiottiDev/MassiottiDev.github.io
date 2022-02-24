@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.8rem;
+    font-weight: 200;
+    line-height: 1.4;
+}
+
+.nav {
+    display: flex;
+    justify-content: flex-end;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3a3b3d;
+    box-shadow: 0 2px black;
+    position: fixed;
+}
+
+.nav-list {
+    display: flex;
+    margin-right: 3rem;
+}
+
+.nav-list img {
+    position: relative;
+    height: 60px;
+    width: 60px;
+    top: 0.4rem;
+    right: 200%;
+}
+
+ul {
+    list-style: none;
+}
+
+.nav-list a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 1rem 1rem;
+    border: 0.5 px solid black;
+}
+
+.nav-list a:hover {
+    background-color: rgb(80, 199, 105);
+}
+
+.welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(36, 36, 36);
+    text-align: center;
+    background-image: url(./img/Backgound-Image.jpg);
+    background-size: cover;
+}
+
+.welcome-section > h1 {
+    font-size: 15vh;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+}
+
+.welcome-section > p {
+    font-style: italic;
+    font-size: 7vh;
+    color: white;
+    background-color: rgb(36, 36, 36);
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.portfolio-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(56, 56, 65);
+    text-align: center;
+}
+
+.portfolio-section article {
+    border: 1px black solid;
+}
