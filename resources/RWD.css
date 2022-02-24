@@ -2,7 +2,7 @@
     box-sizing: border-box;
   }
 
-/* For desktop: */
+/* Desktop: */
 .col-1 {width: 8.33%;}
 .col-2 {width: 16.66%;}
 .col-3 {width: 25%;}
@@ -17,9 +17,17 @@
 .col-12 {width: 100%;}
 
 @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
+  /* Mbile Phones: */
   [class*="col-"] {
     width: 100%;
+  }
+  
+  .nav {
+    justify-content: center;
+  }
+
+  .nav-list {
+    margin: 0;
   }
 
   .welcome-section > h1 {
