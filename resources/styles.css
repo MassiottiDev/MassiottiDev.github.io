@@ -15,6 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -96,18 +97,31 @@ nav ul li:hover {
 
 #section-2 {
     grid-area: s-2;
-    background-color: wheat;
+    background: whitesmoke;
     height: 100vh;
     max-width: 100vw;
 }
 
-
-#section-3 {
-    grid-area: s-3;
-    background-color: wheat;
-    height: 100vh;
-    max-width: 100vw;
+#section-2 h1 {
+    text-align: center;
+    font-size: 4vw;
+    margin: 2vh 0;
 }
+
+#section-2 div {
+    display: grid;
+    text-align: center;
+    align-items: stretch;
+    gap: 5vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 40vh 40vh;
+    margin: 0 5vw;  
+}
+
+#section-2 div p {
+    border: solid 1px red;
+}
+
 
 footer {
     grid-area: footer;
@@ -193,7 +207,7 @@ footer div a:hover {
     }
 
     @keyframes text-animation {
-        from {bottom: 0vh;} to {bottom: 2.5vh;}
+        from {bottom: 0vh;} to {bottom: 0vh;}
     }
 }
 
